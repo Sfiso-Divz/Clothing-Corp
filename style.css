@@ -1,0 +1,182 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/* ---- Globals --- */
+a{
+    text-decoration: none;
+}
+
+ul{
+    list-style: none;
+}
+
+/* ---- Globals --- */
+
+.header{
+    height:50vh;
+    width: 100%;
+    background: linear-gradient(rgba(0, 0, 0, 0.76),rgba(0, 0, 0, 0.76)), url(./images/Banner.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.brand a{
+    color: white;
+    font-size: 25px;
+    font-weight: 800;
+}
+
+nav{
+    display:flex;
+    justify-content: space-between;
+    padding: 30px 6%;
+    
+}
+
+nav .navlinks{
+    display: flex;
+      
+}
+
+.navlinks li{
+    padding: 0 5px;
+}
+
+nav .navlinks a{
+    color: white;
+    padding: 2px 4px;
+    font-size: 20px;
+}
+
+nav .log-sign{
+    display: flex;
+}
+nav .log-sign a{
+    padding: 0 10px;
+    color: white;
+    font-size: 20px;
+}
+
+/* ------ Hover --- */
+.navlinks :hover a{
+    background-color: orangered;
+    
+}
+
+
+/* ------ Hover --- */
+
+.title h1{
+    color: white;
+    position: absolute;
+    margin-left: 35%;
+    margin-top: 7rem;
+    font-size: 65px;
+}
+
+.intro-container{
+    display: flex;
+    margin-top: 7rem;
+    margin-left: 15%;
+}
+
+.intro-container img{
+    width: 33%;
+    justify-content: center;
+    align-items: center;
+   
+
+}
+
+.intro-container p{
+    font-size: 40px;
+    margin-top: 7rem;
+    margin-left: 7rem;
+    
+}
+
+.intro-container p a{
+    font-size: 15px;
+    margin-left: 7rem;
+    background-color: orangered;
+    border: 1px solid orangered;
+    color: white;
+    padding: 10px 35px;
+  
+
+}
+
+.intro-container span{
+    font-size: 55px;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+/* ------ Products --------- */
+
+.product-container{
+    width: 100%;
+    height: 100vh;
+}
+
+.products h1{
+    margin-top: 3rem;
+    text-align: center;
+    font-size: 40px;
+}
+
+.product-items{
+    display: grid;
+    grid-template-columns:repeat(auto-fit, minmax(250px,1fr));
+    grid-column-gap: 16px;
+    grid-row-gap: 120px;
+    margin-left: 8rem;
+    margin-top: 5rem;
+    padding: 10px 0;
+}
+
+.product-info img{
+    width: 60%;
+}
+.product-info .text{
+    font-size: 25px;
+    padding-top: 25px;
+    margin-top: 10px;
+    
+}
+
+.product-info .text a{
+    padding: 10px 20px;
+    border: 1px solid orangered;
+    background-color: orangered;
+    color: white;
+    font-size: 12px;
+    margin-left: 25px;
+    
+
+}
+
+.product-info span{
+    margin-left: 35px;
+    font-size: 20px;
+}
+
+
+
+
+
+
+/* ------ Products --------- */
+
+
+/* --- Media Query --- */
+
+@media only screen and ( max-width: 770px){
+    nav .navlinks{
+        display: none;
+    }
+}
